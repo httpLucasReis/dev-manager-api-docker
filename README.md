@@ -24,7 +24,7 @@
 ```
 
   *  Enjoy my API
-  * To stop the containers rub
+  * To stop the containers run
   
  ```
   docker-compose down
