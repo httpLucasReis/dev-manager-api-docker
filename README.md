@@ -1,1 +1,1 @@
-# dev-manager-api-docker
+# Dev Manager api with Docker
