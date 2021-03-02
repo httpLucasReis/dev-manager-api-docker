@@ -29,5 +29,72 @@
  ```
   docker-compose down
 ```
- 
+
+## User routes 
+
+
+**GET**
+  ```json
+    /users
+  ```
+
+**POST**
+  ```json
+  /users
+
+  {
+	  "username": "ANY USERNAME"
+  }
+  ```
+
+**PUT**
+  ```json
+  /users/{id}
+
+  {
+	  "username": "ANY USERNAME"
+  }
+  ```
+
+**DELETE**
+  ```json
+  /users/{id}
+  ```
+
+## Projects routes
+  
+**GET**
+  ```json
+  /projects 
+  ```
+
+  **OR**  
+
+  ```
+  /projects?user_id={ID}&page={NUMBER}
+  ```
+
+**POST**
+  ```json
+  /projects
+
+  {
+    "title": "ANY PROJECT NAME",
+    "user_id": "USER ID"
+  }
+  ```
+
+**PUT**
+  ```json
+  /projects/{ID}
+
+  {
+	  "title": "ANY PROJECT NAME"
+  }
+  ```
+
+**DELETE**
+  ```json
+  /projects/{ID}
+  ```
   
