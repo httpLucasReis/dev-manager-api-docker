@@ -8,6 +8,11 @@
 ```
   
   * Now, you need install docker. [Download here](https://www.docker.com/get-started)
+  * Give permission to init.sh script.
+```
+Give permission to init.sh script.
+```
+
   * Create a file called .env in the source folder and set this variables
 
 ```env
