@@ -5,7 +5,7 @@ const routes = require('./routes');
 
 // Setting acess-control-expose-headers
 const corsOptions = {
-  origin: ["http://localhost:3000","*"],
+  origin: ["*"],
   credentials: true,
   exposedHeaders: ['X-Total-Count', 'Content-Length']
 }
@@ -28,6 +28,6 @@ app.use((error, req, res, next) => {
   res.json({ error: error.message })
 })
 
-app.listen(3333, ()=> {
+app.listen(process.env.PORT || 3333, ()=> {
   console.log('Server is running');
 });
