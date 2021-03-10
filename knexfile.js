@@ -1,4 +1,8 @@
 require('dotenv').config();
+const pg = require('pg')
+pg.defaults.ssl = {
+   rejectUnauthorized: false,
+}
 
 module.exports = {
   development: {
@@ -16,6 +20,13 @@ module.exports = {
   production: {
     client: 'pg',
     connection: process.env.DATABASE_URL,
+    ssl: {
+      rejectUnauthorized: false,
+    },
+    pool: {
+          min: 2,
+          max: 10,
+    },
     migrations: {
       tableName: "knex_migrations",
       directory: `${__dirname}/src/database/migrations`
